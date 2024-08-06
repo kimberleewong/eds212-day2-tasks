@@ -40,7 +40,20 @@ a=1.2
 eval(exp2_der)
 ```
 
-# make penguin plot
+# make penguin plot of bill length v. bill depth
+```{r}
+ggplot(data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_point(aes(color = species)) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
+       title = "Palmer Penguin Bill Length in relation to Bill Depth",
+       subtitle = "Palmer Archipelago, Antarctice (2007 - 2009)",
+       caption = "Collected by Dr. Kristen Gorman and colleagues at Palmer Station LTER") 
+```
+
+
+# make penguin plot of species v flipper length
 ```{r}
 ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_point(aes(color = species)) +
