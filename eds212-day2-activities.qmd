@@ -1,0 +1,22 @@
+---
+title: "eds212-day2-activities"
+author: "Kimmy Wong"
+format: html
+editor_options: 
+  chunk_output_type: console
+---
+
+# load packages
+```{r}
+library(palmerpenguins)
+
+library(tidyverse)
+```
+
+# add git stuff
+```{r}
+usethis::use_git()
+
+usethis::use_github()
+```
+
