@@ -14,9 +14,8 @@ library(tidyverse)
 ```
 
 # add git stuff
-```{r}
+
 usethis::use_git()
 
 usethis::use_github()
-```
 
